@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <script src="script.js"></script>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css" integrity="sha512-RvQxwf+3zJuNwl4e0sZjQeX7kUa3o82bDETpgVCH2RiwYSZVDdFJ7N/woNigN/ldyOOoKw8584jM4plQdt8bhA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- <input class="box" type="text" placeholder="enter name"> -->
+    <div class="flex items-center justify-center min-h-screen bg-gray-200">
+        <div class="px-8 py-6 mx-4 mt-4 text-left bg-white shadow-lg">
+            <h3 class="text-2xl font-bold text-center">FORM VALIDATION</h3>
+            <form action="">
+
+                <div class="mt-4">
+                    <div>
+                        <label class="" for="">Name</label>
+                        <div></div>
+                        <input
+                            class="box w-80 px-4 py-2 mt-2 border rounded-md focus:outline-none" type="text"
+                            placeholder="Name"> <span class="dangername hidden"><i class="hidden text-red-600 text-3xl fa-solid fa-exclamation"></i></span>
+                    </div>
+                </div>
+
+
+                <div class="mt-4">
+                    <label class="block" for="email">Email<label>
+                        <div></div>
+                            <input type="text" placeholder="Enter Email"
+                                class="email w-80 px-4 py-2 mt-2 border rounded-md focus:outline-none">
+                </div>
+                <div class="mt-4">
+                    <label class="block">Password<label>
+                        <div></div>
+                            <input type="password" placeholder="Password"
+                                class="pass w-80 px-4 py-2 mt-2 border rounded-md focus:outline-none">
+                                <span class="passeyeopen"><i class="fa-solid fa-eye"></i></span> 
+                </div>
+                <div class="mt-4">
+                    <label class="block">Confirm Password<label>
+                        <div></div>
+                            <input type="password" placeholder="Password"
+                                class="confirm w-80 px-4 py-2 mt-2 border rounded-md focus:outline-none">
+                        <div class="err text-red-400 text-xl"></div>
+                </div>
+                <span  class="text-xs text-red-400"></span>
+                <div  class="flex">
+                    <button class="finalcheck w-80 px-6 py-2 mt-4 text-white bg-green-600 rounded-lg hover:bg-green-900">
+                        Validate</button>
+                    <div class="err1 text-xl text-red-400"></div>
+                    <button class="submitcheck hidden w-80 px-6 py-2 mt-4 text-white bg-blue-600 rounded-lg hover:bg-blue-900">
+                        Submit</button>
+                </div>
+            </form>
+        </div>
+        <img src="https://img.freepik.com/free-vector/mobile-login-concept-illustration_114360-135.jpg?w=2000" alt=""
+            width="530">
+    </div>
+</body>
+
+</html>
